@@ -7,6 +7,9 @@ function playSound () {
         audio.play();
 }
 
-buttons.forEach(links => {
-    links.addEventListener('mousedown', playSound)
+links.forEach(a => {
+    a.addEventListener('click', () => {
+        playSound
+        console.log('it ran')
+    })
 })
