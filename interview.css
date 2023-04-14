@@ -4,7 +4,7 @@
     margin:0px;
     color: white;
     font-family: merriweather;
-    --theme: (96,197,168,255);
+    --theme: rgb(96,197,168,255);
 }
 
 @font-face {

@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
-    border: solid red 0px;
-    --theme: rgba(96,197,168,255);
-    --gray: rgb(75, 75, 75);
     color: white;
     font-family: merriweather;
+    --theme: rgba(96,197,168,255);
+    --gray: rgb(75, 75, 75);
 }
 
 @font-face {
@@ -60,56 +59,64 @@ body {
     display:flex;
     justify-content: space-between;
     padding-left: 1%;
+    box-shadow: 0px -2px inset white;
+
 }
 
 h4 {
     font-size: larger;
 }
 
-
+/*center video screen*/
 .interviewer {
+    position: relative;
     grid-column: 2 /3;
     background-color:var(--gray);
-    padding: 1%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     align-items: center;
+    justify-items: center;
 }
 
 .interviewer>img {
     filter: none;
-    min-width: 50%;
-    max-height: 40vh;
+    max-width: 420px;
+    border: 2px solid var(--theme)
 }
 
 .control-buttons {
+    position: absolute;
     bottom: 5%;
     width: 60%;
     height: 10%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: end;
 }
 
 .control-buttons > img {
     border-radius: 50px;
     filter: none;
-    height: 75%;
-    min-width: 15%;
+    height: 5vw;
+    min-width: 12%;
     background-color: var(--theme);
+    padding: 3%;
 }
 
-.control-buttons>img:hover,
-button:hover {
+.control-buttons>img:hover {
     background-color: rgb(0, 168, 126);
 }
+
+/*right player input area*/
 
 .player-inputs {
     grid-column: 3  / 4;
     grid-row: 2 / 3;
     background-color: rgb(85, 85, 85);
-    border-left: 1px solid white;
+    border-left: 2px solid white;
+    background-color: var(--theme);
 }
 
 .voice-answer {
@@ -121,6 +128,7 @@ button:hover {
     display:flex;
     justify-content: center;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .profile {
@@ -128,10 +136,17 @@ button:hover {
 }
 
 button {
-    background-color: var(--theme);
+    color: var(--theme);
+    background-color: white;
     border-radius: 20px;
-    width: 40%;
+    width: 30%;
     height: 5vh;
-    font-size: larger;
+    font-size: max(1.5vw);
+    border: 0px;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: rgb(234, 234, 234);
 }
 
