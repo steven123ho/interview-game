@@ -1,5 +1,5 @@
 # Interview-game
-# This is a draft game of the screens needed for a game that tests your interview skills. These screens were created entirely using html and css.
+This is a draft game of the screens needed for a game that tests your interview skills. These screens were created entirely using html and css.
 
 # Game Home Page
 ![image](https://github.com/steven123ho/interview-game/assets/110568734/632d63a7-2046-4e6d-865a-3303b4a3b2f2)
